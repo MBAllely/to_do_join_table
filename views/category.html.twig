@@ -21,7 +21,7 @@
         <label for="task_id">Select a task</label>
         <select id='task_id' name='task_id' type='text'>
           {% for task in all_tasks %}
-            <option value="{{ task.getId }}"> {{ task.getDueDate }} </option>
+            
             <option value="{{ task.getId }}"> {{ task.getDescription }} </option>
           {% endfor %}
         </select>
